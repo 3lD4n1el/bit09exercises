@@ -7,9 +7,9 @@ export const Ex01 = () => {
   const [color, setColor] = useState(null);
 
   useEffect(() => {
-    if (contador > 0) setColor('success');
-    else if (contador < 0) setColor('warning');
-    else setColor('secondary');
+    if (contador > 0) setColor('info');
+    else if (contador < 0) setColor('danger');
+    else setColor('warning');
   }, [contador]);
 
   return (
@@ -18,13 +18,13 @@ export const Ex01 = () => {
         Contador: <Badge bg={color}>{contador}</Badge>
       </h2>
       <Button variant='outline-dark' onClick={() => setContador(contador - 1)}>
-        <i className='bi bi-dash-circle'></i>
+        <i className='bi bi-caret-left'></i>
       </Button>
       <Button variant='outline-dark' onClick={() => setContador(0)}>
-        <i className='bi bi-circle'></i>
+        <i className='bi bi-repeat'></i>
       </Button>
       <Button variant='outline-dark' onClick={() => setContador(contador + 1)}>
-        <i className='bi bi-plus-circle-fill'></i>
+        <i className='bi bi-caret-right'></i>
       </Button>
     </section>
   );

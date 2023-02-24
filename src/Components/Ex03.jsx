@@ -18,7 +18,6 @@ export const Ex03 = () => {
         const res = await fetch("https://jsonplaceholder.typicode.com/users");
         setUsers(await res.json());
       } catch (error) {
-        console.log("camino triste, reject");
         
       } finally {
   
