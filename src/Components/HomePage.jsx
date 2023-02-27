@@ -11,7 +11,7 @@ export const HomePage = () => {
           width={171}
           height={180}
           alt='Daniel Romero'
-          src= '../img/me.jpg'
+          src= 'https://3ld4n1el.github.io/bit07me/img/me.jpg'
         />
         <Figure.Caption></Figure.Caption>
       </Figure>
