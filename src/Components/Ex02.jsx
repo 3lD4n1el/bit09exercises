@@ -26,7 +26,7 @@ export const Ex02 = () => {
   return <section>
     <h2>¿Quieres ver un pato? 🦆</h2>
     {error
-      ? <Alert variant="warning"><p>Ups no hay patos hoy 😔</p></Alert>
+      ? <Alert variant="warning"><p>Ups no hay patos hoy 😔, tal vez tienes que activar esta <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">extención</a></p></Alert>
       : loading
       ? <Spinner animation="border" variant="info" />
       : pato && <Image src={pato.url} alt='Duck' />
