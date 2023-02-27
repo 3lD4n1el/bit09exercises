@@ -3,7 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Navigation } from './components/Navigation';
 
 function App() {
-  return <Navigation />;
+  return <Navigation/>;
 }
 
 export default App;
